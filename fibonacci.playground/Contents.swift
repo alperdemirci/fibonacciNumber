@@ -8,18 +8,18 @@ import UIKit
 
 // f(i) = f(i+1) + f(i+2)
 
-
+// function computing finonacci number Recursively
 func fibonacciNumberRecursive(_ nthNumber: Int) -> Int {
         if nthNumber <= 2 {
             return 1
         }
         return fibonacciNumberRecursive(nthNumber-1) + fibonacciNumberRecursive((nthNumber-2))
 }
-
+//testing the above function
 fibonacciNumberRecursive(7)
 
 
-
+// function computing finonacci number Non-Recursively
 func fibonacciNumberNonRecursive(_ nthNumber: Int) -> Int {
     if(nthNumber <= 2){
         return 1
@@ -33,5 +33,5 @@ func fibonacciNumberNonRecursive(_ nthNumber: Int) -> Int {
     }
     return fibonacciNumber
 }
-
+//testing above function
 fibonacciNumberNonRecursive(6)
