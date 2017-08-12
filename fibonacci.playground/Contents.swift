@@ -26,8 +26,8 @@ func fibonacciNumberNonRecursive(_ nthNumber: Int) -> Int {
     }
     var fibonacciNumber = 1
     var fibonacciPreviousNumber = 1
-    for index in 3...nthNumber {
-        var temp = fibonacciNumber
+    for _ in 3...nthNumber {
+        let temp = fibonacciNumber
         fibonacciNumber += fibonacciPreviousNumber
         fibonacciPreviousNumber = temp
     }
